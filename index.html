@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="script/OAuth.js"></script>
+</head>
+<body>
+<h3>logged?</h3>
+<script type="text/javascript">
+// In callback URL
+
+
+OAuth.callback('github', function(error, success) {
+  console.log("Below the access_token to use in github API");
+  console.log(success.access_token);
+});
+
+</script>
+<body>
+</html>

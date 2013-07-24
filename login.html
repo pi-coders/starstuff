@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="script/OAuth.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+console.log("login.html");
+// Initialize with your OAuth.io app public key
+OAuth.initialize('key_oauth');
+// callback_url is the URL where users are redirected
+// after being authorized
+OAuth.redirect('github', 'http://www.starstuff.com:8000/index.html');
+</script>
+<body>
+</html>
